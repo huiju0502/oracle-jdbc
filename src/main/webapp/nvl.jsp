@@ -61,7 +61,7 @@
 	while(rs3.next()) {
 		HashMap<String, Object> m3 = new HashMap<String, Object>();
 		m3.put("이름", rs3.getString("이름"));
-		m3.put("result", rs3.getInt("result"));
+		m3.put("result", rs3.getString("result"));
 		
 		list3.add(m3);
 	}
@@ -141,7 +141,7 @@
 			%>
 				<tr>
 					<td><%=(String)(m3.get("이름")) %></td>
-					<td><%=(Integer)(m3.get("result")) %></td>
+					<td><%=m3.get("result") %></td>
 				<tr>
 			<%
 				}
