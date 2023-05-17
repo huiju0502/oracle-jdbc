@@ -123,7 +123,7 @@
 		%>
 			<tr>
 				<td><%=(Integer)m1.get("부서ID") %></td>
-				<td><%=m1.get("직무ID") %></td>
+				<td><%=(String)m1.get("직무ID") %></td>
 				<td><%=(Integer)m1.get("부서인원") %></td>
 			</tr>
 		<%
@@ -143,7 +143,7 @@
 		%>
 			<tr>
 				<td><%=(Integer)m2.get("부서ID") %></td>
-				<td><%=m2.get("직무ID") %></td>
+				<td><%=(String)m2.get("직무ID") %></td>
 				<td><%=(Integer)m2.get("부서인원") %></td>
 			</tr>
 		<%
@@ -162,7 +162,7 @@
 		%>
 			<tr>
 				<td><%=(Integer)m3.get("부서ID") %></td>
-				<td><%=m3.get("직무ID") %></td>
+				<td><%=(String)m3.get("직무ID") %></td>
 				<td><%=(Integer)m3.get("부서인원") %></td>
 			</tr>
 		<%
@@ -182,7 +182,7 @@
 		%>
 			<tr>
 				<td><%=(Integer)m4.get("부서ID") %></td>
-				<td><%=m4.get("직무ID") %></td>
+				<td><%=(String)m4.get("직무ID") %></td>
 				<td><%=(Integer)m4.get("부서인원") %></td>
 			</tr>
 		<%
