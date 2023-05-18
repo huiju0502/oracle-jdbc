@@ -101,15 +101,15 @@
    </table>
    <%
   
-   		int lastPage = totalRow / rowPerPage;
-		if(totalRow % rowPerPage != 0) {
+   		int lastPage = totalRow / rowPerPage; // 마지막페이지
+		if(totalRow % rowPerPage != 0) { // 전체행이 10으로 나누어떨어지지 않으면 마지막페이지+1
 			lastPage = lastPage + 1;
 		}
 		
 		// 페이지 네비게이션 페이징
 		int pagePerPage = 10;
 		
-		int minPage = (((currentPage-1) / pagePerPage) * pagePerPage) + 1;
+		int minPage = (((currentPage-1) / pagePerPage) * pagePerPage) + 1; 
 		int maxPage = minPage + (pagePerPage - 1);
 		if(maxPage > lastPage) {
 			maxPage = lastPage;
