@@ -122,7 +122,7 @@
 		
 		if(minPage > 1) {
 	%>
-			<a href="./functionEmpList.jsp?currentPage=<%=minPage-pagePerPage%>">이전</a>	
+			<a href="<%=request.getContextPath() %>/functionEmpList.jsp?currentPage=<%=minPage-pagePerPage%>">이전</a>	
 	<%
 		}
 		
@@ -133,7 +133,7 @@
 	<%			
 			} else {		
 	%>
-				<a href="./functionEmpList.jsp?currentPage=<%=i%>"><%=i%></a>&nbsp;	
+				<a href="<%=request.getContextPath() %>/functionEmpList.jsp?currentPage=<%=i%>"><%=i%></a>&nbsp;	
 	<%	
 			}
 		}
@@ -141,7 +141,7 @@
 		if(maxPage != lastPage) {
 	%>
 			<!--  maxPage + 1 -->
-			<a href="./functionEmpList.jsp?currentPage=<%=minPage+pagePerPage%>">다음</a>
+			<a href="<%=request.getContextPath() %>/functionEmpList.jsp?currentPage=<%=minPage+pagePerPage%>">다음</a>
 	<%
 		}
    	%>
